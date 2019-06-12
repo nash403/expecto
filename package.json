@@ -1,0 +1,47 @@
+{
+  "name": "v-expecto",
+  "version": "0.0.0",
+  "description": "Vue utils to help you manage the (multiple) loading state(s) of your apps.",
+  "main": "dist/v-expecto.umd.js",
+  "module": "dist/v-expecto.esm.js",
+  "unpkg": "dist/v-expecto.min.js",
+  "repository": "https://github.com/nash403/v-expecto",
+  "bugs": {
+    "url": "https://github.com/nash403/v-expecto/issues"
+  },
+  "homepage": "https://github.com/nash403/v-expecto#readme",
+  "keywords": [
+    "vue",
+    "loading",
+    "loaders",
+    "state",
+    "vuex"
+  ],
+  "author": "Honoré Nintunze <nintu.lab@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "release": "np",
+    "build": "NODE_ENV=production npm run build:browser && npm run build:es && npm run build:umd",
+    "build:browser": "rollup --config build/rollup.config.browser.js",
+    "build:es": "rollup --config build/rollup.config.es.js",
+    "build:umd": "rollup --config build/rollup.config.umd.js",
+    "dev": "cross-env NODE_ENV=development rollup --config build/rollup.config.es.js --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "np": "*",
+    "rollup": "^1.15.1",
+    "rollup-plugin-analyzer": "^3.0.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.1",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-vue": "^5.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
