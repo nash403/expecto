@@ -53,9 +53,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "np": {
-    "contents": "dist"
-  },
   "ava": {
     "require": [
       "esm"

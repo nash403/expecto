@@ -1,0 +1,6 @@
+src/
+tests/
+build/
+.*
+jsconfig.json
+*.lock
