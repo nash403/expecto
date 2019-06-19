@@ -1,15 +1,15 @@
 {
-  "name": "v-expecto",
+  "name": "@nashlabs/expecto",
   "version": "0.0.0",
-  "description": "Vue utils to help you manage the (multiple) loading state(s) of your apps.",
-  "main": "dist/v-expecto.umd.js",
-  "module": "dist/v-expecto.esm.js",
-  "unpkg": "dist/v-expecto.min.js",
-  "repository": "https://github.com/nash403/v-expecto",
+  "description": "Manage your loading states (with first-class integration with Vue.js)",
+  "main": "dist/expecto.umd.js",
+  "module": "dist/expecto.esm.js",
+  "unpkg": "dist/expecto.min.js",
+  "repository": "https://github.com/nash403/expecto",
   "bugs": {
-    "url": "https://github.com/nash403/v-expecto/issues"
+    "url": "https://github.com/nash403/expecto/issues"
   },
-  "homepage": "https://github.com/nash403/v-expecto#readme",
+  "homepage": "https://github.com/nash403/expecto#readme",
   "keywords": [
     "vue",
     "loading",

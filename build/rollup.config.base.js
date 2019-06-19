@@ -8,7 +8,7 @@ import analyze from 'rollup-plugin-analyzer'
 const config = require('../package.json')
 
 export default {
-  input: 'src/index.js',
+  input  : 'src/index.js',
   plugins: [
     resolve({
       mainFields: ['module', 'jsnext:main', 'main', 'browser'],
@@ -17,9 +17,9 @@ export default {
       css: true,
     }),
     babel({
-      exclude: 'node_modules/**',
+      exclude       : 'node_modules/**',
       runtimeHelpers: true,
-      extensions: ['.js', '.jsx', '.es6', '.es', '.mjs', '.vue'],
+      extensions    : ['.js', '.jsx', '.es6', '.es', '.mjs', '.vue'],
     }),
     cjs(),
     replace({
