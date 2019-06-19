@@ -1,6 +1,6 @@
 {
   "name": "@nashlabs/expecto",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Manage your loading states (with first-class integration with Vue.js)",
   "main": "dist/expecto.umd.js",
   "module": "dist/expecto.esm.js",
