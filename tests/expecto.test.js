@@ -191,7 +191,7 @@ test('startLoading with a callback that does not return a Promise throws', async
   }
 })
 
-test.only('in startLoading, there is a loader during callback execution', t => {
+test('in startLoading, there is a loader during callback execution', t => {
   // Given
   const expecto = new ExpectoWrapper()
   const returnedData = 'some data'

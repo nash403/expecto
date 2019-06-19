@@ -1,7 +1,7 @@
-import {DEFAULT_NAMESPACE, VUEX_NOT_INSTALLED} from './constants'
+import {DEFAULT_NAMESPACE, DEFAULT_COMPONENT_NAME, VUEX_NOT_INSTALLED} from './constants'
 
 export function createComponent({
-  componentName,
+  componentName = DEFAULT_COMPONENT_NAME,
   namespace = DEFAULT_NAMESPACE,
   className = [],
 }) {

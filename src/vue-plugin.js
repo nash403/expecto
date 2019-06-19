@@ -1,9 +1,9 @@
-import {DEFAULT_NAMESPACE} from './constants'
+import {DEFAULT_NAMESPACE, DEFAULT_COMPONENT_NAME} from './constants'
 import {createComponent} from './component'
 
 export function createVuePlugin({
   namespace = DEFAULT_NAMESPACE,
-  componentName,
+  componentName = DEFAULT_COMPONENT_NAME,
   className,
 } = {}) {
   const install = Vue => {
