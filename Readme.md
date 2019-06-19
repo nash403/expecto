@@ -101,6 +101,14 @@ expecto.isLoading(id => /^UID-.*/.test) // returns `true` if one id starts with 
 $store.dispatch(`<vuex module name>/startLoading`, { loaderId, callback }, { root: true })
 ```
 
+### **Tip 3:** The class used under the hood (`ExpectoWrapper`) is also exposed.
+
+By creating new instances of it, you can have different and isolated loading state managers.
+
+```js
+$store.dispatch(`<vuex module name>/startLoading`, { loaderId, callback }, { root: true })
+```
+
 ## License
 
 MIT © [Honoré Nintunze](https://nintu.me)
